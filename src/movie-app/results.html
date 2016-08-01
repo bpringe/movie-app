@@ -1,16 +1,16 @@
 <div>
-    <br>
-    <ol class="breadcrumb">
-        <li><a ng-href="#/">Home</a></li>
-        <li>Results</li>
-    </ol>
+  <br>
+  <ol class="breadcrumb">
+    <li><a ng-href="#/">Home</a></li>
+    <li>Results</li>
+  </ol>
 
-    <accordion>
-        <accordion-group ng-repeat="result in results" is-open="result.open">
-            <accordion-heading>
-                {{result.Title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': result.open,
-                'glyphicon-chevron-right': !result.open}"></i>
-            </accordion-heading>
-        </accordion-group>
-    </accordion>
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="panel-default" ng-repeat="result in results" is-open="result.open">
+      <div uib-accordion-heading>
+        {{result.Title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': result.open, 'glyphicon-chevron-right': !result.open}"></i>
+      </div>
+    </div>
+  </uib-accordion>
+
 </div>
