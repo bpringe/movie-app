@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Jul 28 2016 14:15:27 GMT-0500 (Central Daylight Time)
+// Generated on Sun Aug 30 2015 15:40:35 GMT+0200 (CEST)
 
 module.exports = function(config) {
   config.set({
@@ -20,8 +20,8 @@ module.exports = function(config) {
       'lib/angular/angular-route.min.js',
       'lib/angular/angular-mocks.js',
       'lib/bootstrap/ui-bootstrap-tpls.min.js',
-      'spec/**/*.js',
-      'src/**/*.js'
+      'src/**/*.js',
+      'spec/**/*.js'
     ],
 
 
@@ -66,10 +66,6 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
-
-    // Concurrency level
-    // how many browser should be started simultaneous
-    concurrency: Infinity
+    singleRun: false
   })
 }
